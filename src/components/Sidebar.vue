@@ -49,7 +49,7 @@ query Menu {
 </static-query>
 
 <script>
-import GitLink from '~/components/GitLink.vue'
+//import GitLink from '~/components/GitLink.vue'
 import throttle from 'lodash/throttle'
 
 export default {
