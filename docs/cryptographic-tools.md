@@ -14,10 +14,6 @@ Even though Jamdocs is so simple, you dont really need to set it up localy (you 
 
 To set up a new instance of Jamdocs, and start developing just clone the project from Github like, go to the directory and run gridsome:
 
-![](https://github.com/DavidLaj/jamdocs/blob/master/docs/favicon.png)
-
-```
-![](~/favicon.png)
-```
+![](https://raw.githubusercontent.com/DavidLaj/jamdocs/master/docs/favicon.png "Diagram")
 
 ## Elliptic curves
