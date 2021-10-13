@@ -28,7 +28,7 @@ export default {
   },
   data() {
     return {
-      description: 'Crypto MNKY'
+      description: 'The public diary of my crypto learning journey'
     }
   },
   metaInfo() {
