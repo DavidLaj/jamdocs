@@ -18,6 +18,14 @@
         {
           "title": "Network layer",
           "slug": "network-layer"
+        },
+        {
+          "title": "Data layer",
+          "slug": "data-layer"
+        },
+        {
+          "title": "Security",
+          "slug": "security"
         }
       ]
     },
