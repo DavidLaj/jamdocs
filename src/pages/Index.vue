@@ -4,8 +4,8 @@
       <h1>{{ $static.metadata.siteName }} - {{ this.description }}</h1>
       <nav>
         <!-- To use other icons here, you need to import them in the Shortcut component -->
-        <Shortcut link="/cryptographic-tools" text="Bitcoin" icon="link-icon"/>
-        <Shortcut link="/theme-configuration" text="Ethereum" icon="sliders-icon" />
+        <Shortcut link="/btc-overview" text="Bitcoin" icon="link-icon"/>
+        <Shortcut link="/eth-overview" text="Ethereum" icon="sliders-icon" />
         <Shortcut link="/theme-configuration#changing-colors" text="Others" icon="eye-icon" />
         <Shortcut link="/getting-started" text="Avalanche" icon="link-icon"/>
         <Shortcut link="/theme-configuration" text="Cardano" icon="sliders-icon" />
@@ -31,7 +31,7 @@ export default {
   },
   data() {
     return {
-      description: 'The public diary of my crypto learning journey'
+      description: 'Summaries of my crypto learning journey'
     }
   },
   metaInfo() {
