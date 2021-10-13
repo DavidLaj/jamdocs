@@ -16,7 +16,7 @@ function addStyleResource (rule) {
 }
 
 module.exports = {
-  siteName: 'Jamdocs',
+  siteName: 'Crypto MNKY',
   siteUrl: 'https://jamdocs.samuelhorn.com',
   templates: {
     Doc: '/:slug',
