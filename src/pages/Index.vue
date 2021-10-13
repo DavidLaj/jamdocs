@@ -28,7 +28,7 @@ export default {
   },
   data() {
     return {
-      description: 'The ultimate static generated documentation theme for the JAM-stack'
+      description: 'Crypto MNKY'
     }
   },
   metaInfo() {
