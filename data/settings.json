@@ -5,7 +5,7 @@
       "topics": [
         {
           "title": "Overview",
-          "slug": "overview"
+          "slug": "btc-overview"
         },
         {
           "title": "Cryptographic tools",
@@ -26,6 +26,15 @@
         {
           "title": "Security",
           "slug": "security"
+        }
+      ]
+    },
+    {
+      "section": "Ethereum",
+      "topics": [
+        {
+          "title": "Overview",
+          "slug": "eth-overview"
         }
       ]
     },
