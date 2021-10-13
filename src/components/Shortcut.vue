@@ -11,12 +11,14 @@
 
 <script>
 import { PlayIcon, SlidersIcon, EyeIcon } from 'vue-feather-icons'
+import BTC from 'vue-cryptocurrency-icons'
 
 export default {
   components: {
     PlayIcon,
     SlidersIcon,
-    EyeIcon
+    EyeIcon,  
+    BTC
   },
   props: {
     link: {

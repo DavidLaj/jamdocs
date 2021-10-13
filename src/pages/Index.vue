@@ -4,7 +4,7 @@
       <h1>{{ $static.metadata.siteName }} - {{ this.description }}</h1>
       <nav>
         <!-- To use other icons here, you need to import them in the Shortcut component -->
-        <Shortcut link="/getting-started" text="Bitcoin" icon='~/favicon.png'/>
+        <Shortcut link="/getting-started" text="Bitcoin" icon="BTC"/>
         <Shortcut link="/theme-configuration" text="Configuration" icon="sliders-icon" />
         <Shortcut link="/theme-configuration#changing-colors" text="Change colors" icon="eye-icon" />
     </div>

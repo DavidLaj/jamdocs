@@ -21,7 +21,8 @@
     "typeface-source-sans-pro": "^0.0.54",
     "vue-feather-icons": "^4.22.0",
     "vuex": "^3.1.1",
-    "websocket-extensions": "^0.1.4"
+    "websocket-extensions": "^0.1.4",
+    "vue-cryptocurrency-icons": "^0.2.5"
   },
   "devDependencies": {
     "node-sass": "^4.13.1",
