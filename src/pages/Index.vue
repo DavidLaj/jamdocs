@@ -7,6 +7,9 @@
         <Shortcut link="/getting-started" text="Bitcoin" icon="link-icon"/>
         <Shortcut link="/theme-configuration" text="Ethereum" icon="sliders-icon" />
         <Shortcut link="/theme-configuration#changing-colors" text="Others" icon="eye-icon" />
+        <Shortcut link="/getting-started" text="Avalanche" icon="link-icon"/>
+        <Shortcut link="/theme-configuration" text="Cardano" icon="sliders-icon" />
+        <Shortcut link="/theme-configuration#changing-colors" text="Others" icon="eye-icon" />
     </div>
   </Layout>
 </template>
