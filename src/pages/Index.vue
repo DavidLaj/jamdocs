@@ -5,8 +5,8 @@
       <nav>
         <!-- To use other icons here, you need to import them in the Shortcut component -->
         <Shortcut link="/getting-started" text="Bitcoin" icon="link-icon"/>
-        <Shortcut link="/theme-configuration" text="Configuration" icon="sliders-icon" />
-        <Shortcut link="/theme-configuration#changing-colors" text="Change colors" icon="eye-icon" />
+        <Shortcut link="/theme-configuration" text="Ethereum" icon="sliders-icon" />
+        <Shortcut link="/theme-configuration#changing-colors" text="Others" icon="eye-icon" />
     </div>
   </Layout>
 </template>
