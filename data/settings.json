@@ -1,6 +1,27 @@
 {
   "sidebar": [
     {
+      "section": "Bitcoin",
+      "topics": [
+        {
+          "title": "Overview",
+          "slug": "overview"
+        },
+        {
+          "title": "Cryptographic tools",
+          "slug": "cryptographic-tools"
+        },
+        {
+          "title": "Protocol layer",
+          "slug": "protocol-layer"
+        },
+        {
+          "title": "Network layer",
+          "slug": "network-layer"
+        }
+      ]
+    },
+    {
       "section": "Introduction",
       "topics": [
         {
