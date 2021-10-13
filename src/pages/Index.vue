@@ -8,7 +8,7 @@
         <Shortcut link="/eth-overview" text="Ethereum" icon="sliders-icon" />
         <Shortcut link="/theme-configuration#changing-colors" text="Polkadot" icon="eye-icon" />
         <Shortcut link="/getting-started" text="Avalanche" icon="link-icon"/>
-        <Shortcut link="/getting-started" text="Others blockchains" icon="link-icon"/>
+        <Shortcut link="/getting-started" text="Others" icon="link-icon"/>
         <Shortcut link="/theme-configuration" text="DeFi" icon="sliders-icon" />
         <Shortcut link="/theme-configuration#changing-colors" text="NFTs" icon="eye-icon" />
     </div>
