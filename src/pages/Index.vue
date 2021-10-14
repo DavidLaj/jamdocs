@@ -7,8 +7,8 @@
         <Shortcut link="/btc-overview" text="Bitcoin" icon="link-icon"/>
         <Shortcut link="/eth-overview" text="Ethereum" icon="sliders-icon" />
         <Shortcut link="/theme-configuration#changing-colors" text="Polkadot" icon="eye-icon" />
-        <Shortcut link="/getting-started" text="Avalanche" icon="link-icon"/>
         <Shortcut link="/getting-started" text="Others" icon="link-icon"/>
+        <Shortcut link="/getting-started" text="Concepts" icon="link-icon"/>
         <Shortcut link="/theme-configuration" text="DeFi" icon="sliders-icon" />
         <Shortcut link="/theme-configuration#changing-colors" text="NFTs" icon="eye-icon" />
     </div>
@@ -32,7 +32,7 @@ export default {
   },
   data() {
     return {
-      description: 'Summaries of my crypto learning journey'
+      description: 'Summaries of my crypto learnings. Hope this can be useful for someone out there...'
     }
   },
   metaInfo() {
