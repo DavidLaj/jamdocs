@@ -28,10 +28,10 @@ The SHA-256 compression function consists of 64 rounds. It divides each block in
 The following are the many diversified applications of SHA-256 in Bitcoin:
  
 ***Addresses*** <br>
-Bitcoin addresses are derived from hashing a payload (e.g. public key, script) twice, first with SHA-256 and then with RIPEMD-160  [5]. For security or just to make it shorter?
+Bitcoin addresses are derived from hashing a payload (e.g. public key, script) twice, first with SHA-256 and then with RIPEMD-160. For security or just to make it shorter?
 
 ***Transaction hash*** <br>
-Every input of a transaction has a field containing a double SHA-256 hash of the transaction holding the redeemed UTXO [6], which ensures that the latter had been included in the blockchain and that the UTXO can be spent.
+Every input of a transaction has a field containing a double SHA-256 hash of the transaction holding the redeemed UTXO, which ensures that the latter had been included in the blockchain and that the UTXO can be spent.
 
 ***Merkle tree*** <br>
 All hashes in Bitcoin’s Merkle trees are double SHA-256. Every block header contains the Merkle root hash, which is the hash at the top of the Merkle tree that acts like a fingerprint of all transactions embedded in the block.
@@ -43,7 +43,9 @@ Every block header contains a double SHA-256 hash of the header of its parent bl
 To build a valid block, miners have to compute a double SHA-256 hash of the block header that is below the difficulty level.
 
 Although Nakamoto did not explain the reason behind his decision, Ferguson and Schneier propose in their book Practical Cryptography that the use of SHA-256d prevents certain types of cryptographic attacks against Merkle-Damgård constructs, called *length extension attacks*. However, Craig Wright does not agree with this idea because other more efficient mechanisms already exist in Bitcoin to prevent this type of attack. Rather, he claims that the use of SHA-256d allows the system to separate the transaction validation and proof-of-work functions between multiple entities, as well as offering the ability to regulate the content of the transactions by filtering the hashes.
-
+<br>
+<br>
+Footnotes: <br>
 <b id="footnote1">1</b>. Except for Bitcoin addresses, where RIPEMD-160 is used together with SHA-256. [↩](#a1) <br>
 <b id="footnote2">2</b>. The initial message is padded to reach a length that is a multiple of 512 bits. The padding structure incorporates the length of the original message in binary: this is called the Merkle-Damgård strengthening and ensures the security of the scheme. [↩](#a2) <br>
 <b id="footnote3">3</b>. The IV of SHA-256 is eight 32 bits words corresponding to the first 32 bits of the decimals part of the square root of the first eight prime numbers. [↩](#a3)
