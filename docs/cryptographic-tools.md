@@ -52,10 +52,10 @@ Footnotes: <br>
 
 ## Merkle trees 
 
-Even though Jamdocs is so simple, you dont really need to set it up localy (you could just fork it on github to edit styles and md-files) - if you want to change it up a bit I recommend setting up localy for a better developer experience.
-
-To set up a new instance of Jamdocs, and start developing just clone the project from Github like, go to the directory and run gridsome:
+bla bla blab
 
 
 
 ## Elliptic curves
+
+bla bla bla
