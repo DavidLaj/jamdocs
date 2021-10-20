@@ -13,8 +13,7 @@ The role of any hash function is to ensure integrity of the data it hashes, thus
 * ***Second pre-image resistance*** <br> Given a message *m1* and its corresponding hash value *h1*, such that hash(*m1*)=*h1*, it is computationally unfeasible to find another message *m2* that hashes to the same value as *m1*, such that hash(*m1*)=hash(*m2*)=*h1*.
 
 * ***Collision resistance*** <br> It is computationally unfeasible to find two different messages *m1* and *m2* that hash to the same value, such that hash(*m1*)=hash(*m2*)=*h*. This means that is a strong one-way hash function.
-<br>
-<br>
+
 SHA-256 algorithm follows an iterative scheme that corresponds to the Merkle–Damgård construction as shown in Figure 1. In breve, it takes as input a message of maximum length of 264 bits and divides it into blocks of 512 bits<sup id="a2">[2](#footnote2)</sup>. The first block is combined with an initialization vector (IV)<sup id="a3">[3](#footnote3)</sup> and processed with the compression function to generate an intermediate 256 bits result. This intermediate result is then combined with the next 512 bits block and processed with the compression function to produce another intermediate 256 bits result, and so forth until the final 256 bits result of the hash function is given with the processing of the last block containing the padding and length of the message. 
 
 ![](https://raw.githubusercontent.com/DavidLaj/jamdocs/master/docs/images/SHA256_iterative_diagram.png "Figure 1")
@@ -34,8 +33,7 @@ The following are the many diversified applications of SHA-256 in Bitcoin:
 * ***Previous block hash*** <br> Every block header contains a double SHA-256 hash of the header of its parent block (i.e. the previous block in the chain), thus linking the blocks together and creating the blockchain.
 
 * ***Proof-of-Work*** <br> To build a valid block, miners have to compute a double SHA-256 hash of the block header that is below the difficulty level.
-<br>
-<br>
+
 Although Nakamoto did not explain the reason behind his decision, Ferguson and Schneier propose in their book Practical Cryptography that the use of SHA-256d prevents certain types of cryptographic attacks against Merkle-Damgård constructs, called *length extension attacks*. However, Craig Wright does not agree with this idea because other more efficient mechanisms already exist in Bitcoin to prevent this type of attack. Rather, he claims that the use of SHA-256d allows the system to separate the transaction validation and proof-of-work functions between multiple entities, as well as offering the ability to regulate the content of the transactions by filtering the hashes.
 <br>
 <br>
