@@ -6,7 +6,7 @@
         <!-- To use other icons here, you need to import them in the Shortcut component -->
         <Shortcut link="/btc-overview" text="Bitcoin Functioning" icon="link-icon"/>
         <Shortcut link="/eth-overview" text="Bitcoin Security" icon="sliders-icon" />
-        <Shortcut link="/theme-configuration#changing-colors" text="A Cooperative Mining Model for Bitcoin" icon="eye-icon" />
+        <Shortcut link="/theme-configuration#changing-colors" text="A Cooperative Mining Model for Bitcoin (*Research Paper*)" icon="eye-icon" />
     </div>
   </Layout>
 </template>
