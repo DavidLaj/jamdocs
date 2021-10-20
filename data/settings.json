@@ -27,6 +27,10 @@
           "title": "Security",
           "slug": "security"
         }
+        {
+          "title": "Upgrades",
+          "slug": "upgrades"
+        }
       ]
     },
     {
