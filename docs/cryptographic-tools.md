@@ -54,10 +54,11 @@ Footnotes: <br>
 
 ## Merkle trees 
 
-Merkle trees are hierarchical data structures consisting of hashes and are used in Bitcoin to check the integrity of the transactions embedded in a block. The base of the tree is composed of the leaves, which are SHA-256 double hashes of each transaction. Leaves are paired and hashed twice to form the upper row of the tree<sup id="a4">[4](#footnote4)</sup> . The same process is repeated up to the top of the tree, that consists of a single hash, the Merkle root, derived from the hashes of all transactions, as shown in the next Figure.
+Merkle trees are hierarchical data structures consisting of hashes and are used in Bitcoin to check the integrity of the transactions embedded in a block. The base of the tree is composed of the leaves, which are SHA-256 double hashes of each transaction. Leaves are paired and hashed twice to form the upper row of the tree<sup id="a4">[4](#footnote4)</sup>. The same process is repeated up to the top of the tree, that consists of a single hash, the Merkle root, derived from the hashes of all transactions, as shown in the next Figure.
 
 ![](https://raw.githubusercontent.com/DavidLaj/jamdocs/master/docs/images/MerkleTree.png "Figure 3")
-
+<br>
+<br>
 The Merkle root is a part of the block header and acts as a digital fingerprint in the verification process accomplished, by the full nodes, of all transactions included in the block. The nodes that do not store the full blockchain (i.e. lightweight nodes) can also check whether a transaction is included in a block by asking a full node for the Merkle path, or Merkle branch, of the transaction. The Merkle path is a series of hashes that were paired with the transaction hash and its parents, from the leaves to the Merkle root. This method is efficient and requires up to a thousand times less data than the amount of data contained in a block (1 MB). For example, the Figure below shows the hashes (in plain blue) that form the Merkle path of the transaction in green.
 
 ![](https://raw.githubusercontent.com/DavidLaj/jamdocs/master/docs/images/MerklePath.png "Figure 4")

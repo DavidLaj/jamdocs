@@ -4,13 +4,9 @@
       <h1>{{ $static.metadata.siteName }} - {{ this.description }}</h1>
       <nav>
         <!-- To use other icons here, you need to import them in the Shortcut component -->
-        <Shortcut link="/btc-overview" text="Bitcoin" icon="link-icon"/>
-        <Shortcut link="/eth-overview" text="Ethereum" icon="sliders-icon" />
-        <Shortcut link="/theme-configuration#changing-colors" text="Polkadot" icon="eye-icon" />
-        <Shortcut link="/getting-started" text="Others" icon="link-icon"/>
-        <Shortcut link="/getting-started" text="Concepts" icon="link-icon"/>
-        <Shortcut link="/theme-configuration" text="DeFi" icon="sliders-icon" />
-        <Shortcut link="/theme-configuration#changing-colors" text="NFTs" icon="eye-icon" />
+        <Shortcut link="/btc-overview" text="Bitcoin Functioning" icon="link-icon"/>
+        <Shortcut link="/eth-overview" text="Bitcoin Security" icon="sliders-icon" />
+        <Shortcut link="/theme-configuration#changing-colors" text="Bitcoin Cooperative Mining Model" icon="eye-icon" />
     </div>
   </Layout>
 </template>
