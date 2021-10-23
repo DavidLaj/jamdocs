@@ -82,6 +82,5 @@ When a Bitcoin transaction is created, the sender identifies the new owner of th
 * *Signature verification*<br>
 1. 
 2.
-3.
-
+3.  <br>
 Where:
