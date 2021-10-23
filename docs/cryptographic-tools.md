@@ -72,4 +72,16 @@ To generate key pairs, Bitcoin uses a curve called secp256k1 recommended by Stan
 
 ![](https://raw.githubusercontent.com/DavidLaj/jamdocs/master/docs/images/ECC2.png "Figure 6")
 
-When a Bitcoin transaction is created, the sender identifies the new owner of the funds by its address, which is a hash of its public key, and only him can spend the funds by proving that he possesses the associated private key. 
+When a Bitcoin transaction is created, the sender identifies the new owner of the funds by his address, which is a hash of his public key, and only him can spend the funds by proving that he possesses the associated private key. When the new owner further creates a transaction to spend those funds, he proves his legitimacy by signing the transaction and providing his public key. The transaction is broadcast to the network and checked by the nodes who receive it. The sender’s public key is hashed to ensure that it corresponds to the address the previous owner sent the funds at, and a verification is maid that the signature was generated with the required private key. The signature and its verification are performed the following way: 
+
+* *Signature*<br>
+1. A random integer r is chosen, where ![formula](https://render.githubusercontent.com/render/math?math=\color{orange}0%20<%20r%20<%20n)
+2. ![formula](https://render.githubusercontent.com/render/math?math=\color{orange}R%20=%20r%20*%20G) is calculated, where ![formula](https://render.githubusercontent.com/render/math?math=\color{orange}R%20=%20()) is a point on the curve
+3.
+
+* *Signature verification*<br>
+1. 
+2.
+3.
+
+Where:

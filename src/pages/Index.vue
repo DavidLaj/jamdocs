@@ -7,6 +7,8 @@
         <Shortcut link="/btc-overview" text="Bitcoin Functioning" icon="layers-icon"/>
         <Shortcut link="/eth-overview" text="Bitcoin Security" icon="shield-icon" />
         <Shortcut link="/theme-configuration#changing-colors" text="A Cooperative Mining Model for Bitcoin (Research Paper)" icon="power-icon" />
+        <Shortcut link="/eth-overview" text="More to come..." icon="shield-icon" />
+        <Shortcut link="/eth-overview" text="Contact me" icon="shield-icon" />
     </div>
   </Layout>
 </template>
