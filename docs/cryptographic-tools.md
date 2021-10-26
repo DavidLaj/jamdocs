@@ -75,13 +75,13 @@ To generate key pairs, Bitcoin uses a curve called secp256k1 recommended by Stan
 When a Bitcoin transaction is created, the sender identifies the new owner of the funds by his address, which is a hash of his public key, and only him can spend the funds by proving that he possesses the associated private key. When the new owner further creates a transaction to spend those funds, he proves his legitimacy by signing the transaction and providing his public key. The transaction is broadcast to the network and checked by the nodes who receive it. The sender’s public key is hashed to ensure that it corresponds to the address the previous owner sent the funds at, and a verification is maid that the signature was generated with the required private key. The signature and its verification are performed the following way: 
 
 *Signature*<br>
-1. A random integer r is chosen, where ![formula](https://render.githubusercontent.com/render/math?math=\color{orange}0%20<%20r%20<%20n)
-2. ![formula](https://render.githubusercontent.com/render/math?math=\color{orange}R%20=%20r%20*%20G) is calculated, where ![formula](https://render.githubusercontent.com/render/math?math=\color{orange}R%20=%20()) is a point on the curve
+1. A random integer r is chosen, where ![formula](https://render.githubusercontent.com/render/math?math=\color{orange}0%20<%20r%20<%20n)<br>
+2. ![formula](https://render.githubusercontent.com/render/math?math=\color{orange}R%20=%20r%20*%20G) is calculated, where ![formula](https://render.githubusercontent.com/render/math?math=\color{orange}R%20=%20(x<sub>R</sub>,%20y<sub>R</sub>)) is a point on the curve<br>
 3.
 
 *Signature verification*<br>
-1. 
-2.
+1. <br>
+2. <br>
 3.  
 
 *Where*:
