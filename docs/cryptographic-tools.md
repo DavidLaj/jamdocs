@@ -72,7 +72,7 @@ To generate key pairs, Bitcoin uses a curve called secp256k1 recommended by Stan
 
 ![](https://raw.githubusercontent.com/DavidLaj/jamdocs/master/docs/images/ECC2.png "Figure 6")
 
-When a Bitcoin transaction is created, the sender identifies the new owner of the funds by his address, which is a hash of his public key, and only him can spend the funds by proving that he possesses the associated private key. When the new owner further creates a transaction to spend those funds, he proves his legitimacy by signing the transaction and providing his public key. The transaction is broadcast to the network and checked by the nodes who receive it. The sender’s public key is hashed to ensure that it corresponds to the address the previous owner sent the funds at, and a verification is maid that the signature was generated with the required private key. The signature and its verification are performed the following way: 
+When a Bitcoin transaction is created, the sender identifies the new owner of the funds by his address, which is a hash of his public key, and only him can spend the funds by proving that he possesses the associated private key. When the new owner further creates a transaction to spend those funds, he proves his legitimacy by signing the transaction and providing his public key. The transaction is broadcast to the network and checked by the nodes who receive it. The sender’s public key is hashed to ensure that it corresponds to the address the previous owner sent the funds at, and a verification is maid that the signature was generated with the required private key. The signature and its verification are performed the following way and are represented in the next Figure: 
 
 ***Signature***<br>
 1. A random integer r is chosen, where ![formula](https://render.githubusercontent.com/render/math?math=\color{orange}0%20<%20r%20<%20n)<br>
@@ -92,9 +92,11 @@ When a Bitcoin transaction is created, the sender identifies the new owner of th
 ![formula](https://render.githubusercontent.com/render/math?math=\color{orange}d) is the private key (i.e. a random integer)<br>
 ![formula](https://render.githubusercontent.com/render/math?math=\color{orange}Q) is the public key (i.e. ![formula](https://render.githubusercontent.com/render/math?math=\color{orange}Q%20=%20d%20\cdot%20G))
 
+![](https://raw.githubusercontent.com/DavidLaj/jamdocs/master/docs/images/ECDSA.png "Figure 7")<br>
+
 A big advantage of ECDSA over other algorithms such as DSA (Digital Signature Algorithm)  and RSA  is that it offers a better key-size to security-level ratio, as shown in the next Table.
 
-![](https://raw.githubusercontent.com/DavidLaj/jamdocs/master/docs/images/ECDSAvsRSA.png "Figure 7")<br>
+![](https://raw.githubusercontent.com/DavidLaj/jamdocs/master/docs/images/ECDSAvsRSA.png "Figure 8")<br>
 
 For example, for a level of security of 128 bits, which means than it takes an average of 2<sup>128</sup>  operations to compromise the security, secp256k1 needs a key of 256 bits while RSA and DSA need a 3072 bits key [4]. This difference in the key size allows ECDSA to save computation time and reduce memory requirements, two major benefits for a system like Bitcoin. 
 
