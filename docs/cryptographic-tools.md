@@ -74,18 +74,18 @@ To generate key pairs, Bitcoin uses a curve called secp256k1 recommended by Stan
 
 When a Bitcoin transaction is created, the sender identifies the new owner of the funds by his address, which is a hash of his public key, and only him can spend the funds by proving that he possesses the associated private key. When the new owner further creates a transaction to spend those funds, he proves his legitimacy by signing the transaction and providing his public key. The transaction is broadcast to the network and checked by the nodes who receive it. The sender’s public key is hashed to ensure that it corresponds to the address the previous owner sent the funds at, and a verification is maid that the signature was generated with the required private key. The signature and its verification are performed the following way: 
 
-*Signature*<br>
+***Signature***<br>
 1. A random integer r is chosen, where ![formula](https://render.githubusercontent.com/render/math?math=\color{orange}0%20<%20r%20<%20n)<br>
 2. ![formula](https://render.githubusercontent.com/render/math?math=\color{orange}R%20=%20r%20\cdot%20G) is calculated, where ![formula](https://render.githubusercontent.com/render/math?math=\color{orange}R%20=%20(x_R,%20y_R)) is a point on the curve<br>
 3. ![formula](https://render.githubusercontent.com/render/math?math=\color{orange}s%20=%20r^{-1}%20\big[h(m)%20%2B%20d%20\cdot%20x_R\big]%20\mod%20n)<br>
 4. The signature is ![formula](https://render.githubusercontent.com/render/math?math=\color{orange}R%20=%20(x_R,%20s))
 
-*Signature verification*<br>
+***Signature verification***<br>
 1. ![formula](https://render.githubusercontent.com/render/math?math=\color{orange}u_1%20=%20s^{-1}h(m)_R%20\mod%20n) and ![formula](https://render.githubusercontent.com/render/math?math=\color{orange}u_2%20=%20s^{-1}x_R%20\mod%20n) are calculated<br>
 2. ![formula](https://render.githubusercontent.com/render/math?math=\color{orange}V%20=%20u_1G%20%2B%20u_2Q) is calculated, where ![formula](https://render.githubusercontent.com/render/math?math=\color{orange}V%20=%20(x_V,%20y_V)) is a point on the curve<br>
 3. ![formula](https://render.githubusercontent.com/render/math?math=\color{orange}x_V%20=%20x_R) verifies the signature
 
-*Where*:<br>
+*Where*,<br>
 ![formula](https://render.githubusercontent.com/render/math?math=\color{orange}n) and ![formula](https://render.githubusercontent.com/render/math?math=\color{orange}G) are curve’s parameters as described in the above Table<br>
 ![formula](https://render.githubusercontent.com/render/math?math=\color{orange}m) is the transaction to be signed<br>
 ![formula](https://render.githubusercontent.com/render/math?math=\color{orange}h(m)) is the hash of the transaction<br>
@@ -94,3 +94,8 @@ When a Bitcoin transaction is created, the sender identifies the new owner of th
 
 A big advantage of ECDSA over other algorithms such as DSA (Digital Signature Algorithm)  and RSA  is that it offers a better key-size to security-level ratio, as shown in the next Table.
 
+![](https://raw.githubusercontent.com/DavidLaj/jamdocs/master/docs/images/ECDSAvsRSA.png "Figure 7")<br>
+
+For example, for a level of security of 128 bits, which means than it takes an average of 2<sup>128</sup>  operations to compromise the security, secp256k1 needs a key of 256 bits while RSA and DSA need a 3072 bits key [4]. This difference in the key size allows ECDSA to save computation time and reduce memory requirements, two major benefits for a system like Bitcoin. 
+
+Moreover, in order to prevent attacks against the ECDLP (baby-step giant-step , Pollard’s rho , etc.), it is advisable to choose the size in bits of the prime ![formula](https://render.githubusercontent.com/render/math?math=\color{orange}p), and thus the size of the keys, so that it is twice as large as the desired level of security (e.g. for a 128 bits security level, ![formula](https://render.githubusercontent.com/render/math?math=\color{orange}p) should be 256 bits).
