@@ -77,12 +77,20 @@ When a Bitcoin transaction is created, the sender identifies the new owner of th
 *Signature*<br>
 1. A random integer r is chosen, where ![formula](https://render.githubusercontent.com/render/math?math=\color{orange}0%20<%20r%20<%20n)<br>
 2. ![formula](https://render.githubusercontent.com/render/math?math=\color{orange}R%20=%20r%20*%20G) is calculated, where ![formula](https://render.githubusercontent.com/render/math?math=\color{orange}R%20=%20(x_R,%20y_R)) is a point on the curve<br>
-3. ![formula](https://render.githubusercontent.com/render/math?math=\color{orange}s%20=%20r^{-1}(h(m)+dx_R)%20\mod%20n)<br>
+3. ![formula](https://render.githubusercontent.com/render/math?math=\color{orange}s%20=%20r^{-1}(h(m)%20%2B%20dx_R)%20\mod%20n)<br>
 4. The signature is ![formula](https://render.githubusercontent.com/render/math?math=\color{orange}R%20=%20(x_R,%20s))
 
 *Signature verification*<br>
-1. <br>
-2. <br>
-3.  
+1. ![formula](https://render.githubusercontent.com/render/math?math=\color{orange}u_1%20=%20s^{-1}h(m)_R%20\mod%20n and ![formula](https://render.githubusercontent.com/render/math?math=\color{orange}u_2%20=%20s^{-1}x_R%20\mod%20n are calculated<br>
+2. ![formula](https://render.githubusercontent.com/render/math?math=\color{orange}V%20=%20u_1G%20%2B%20u_2Q) is calculated, where ![formula](https://render.githubusercontent.com/render/math?math=\color{orange}V%20=%20(x_V,%20y_V)) is a point on the curve<br>
+3. ![formula](https://render.githubusercontent.com/render/math?math=\color{orange}x_V%20=%20x_R) verifies the signature
 
-*Where*:
+*Where*:<br>
+![formula](https://render.githubusercontent.com/render/math?math=\color{orange}n) and ![formula](https://render.githubusercontent.com/render/math?math=\color{orange}G) are curve’s parameters as described in the above Table<br>
+![formula](https://render.githubusercontent.com/render/math?math=\color{orange}m) is the transaction to be signed<br>
+![formula](https://render.githubusercontent.com/render/math?math=\color{orange}h(m)) is the hash of the transaction<br>
+![formula](https://render.githubusercontent.com/render/math?math=\color{orange}d) is the private key (i.e. a random integer)<br>
+![formula](https://render.githubusercontent.com/render/math?math=\color{orange}Q) is the public key (i.e. ![formula](https://render.githubusercontent.com/render/math?math=\color{orange}Q%20=%20d%20*%20G))
+
+A big advantage of ECDSA over other algorithms such as DSA (Digital Signature Algorithm)  and RSA  is that it offers a better key-size to security-level ratio, as shown in the next Table.
+
