@@ -76,8 +76,9 @@ When a Bitcoin transaction is created, the sender identifies the new owner of th
 
 *Signature*<br>
 1. A random integer r is chosen, where ![formula](https://render.githubusercontent.com/render/math?math=\color{orange}0%20<%20r%20<%20n)<br>
-2. ![formula](https://render.githubusercontent.com/render/math?math=\color{orange}R%20=%20r%20*%20G) is calculated, where ![formula](https://render.githubusercontent.com/render/math?math=\color{orange}R%20=%20(x<sub>R</sub>,%20y<sub>R</sub>)) is a point on the curve<br>
-3.
+2. ![formula](https://render.githubusercontent.com/render/math?math=\color{orange}R%20=%20r%20*%20G) is calculated, where ![formula](https://render.githubusercontent.com/render/math?math=\color{orange}R%20=%20(x_R,%20y_R)) is a point on the curve<br>
+3. ![formula](https://render.githubusercontent.com/render/math?math=\color{orange}s%20=%20r^{-1}(h(m)+dx_R)%20\mod%20n)<br>
+4. The signature is ![formula](https://render.githubusercontent.com/render/math?math=\color{orange}R%20=%20(x_R,%20s))
 
 *Signature verification*<br>
 1. <br>
