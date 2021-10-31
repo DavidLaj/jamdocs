@@ -36,7 +36,7 @@ Past events have demonstrated this hierarchical governance model. In the Bitcoin
 This lack of democracy and the centralization of the decision-making power go against the fundamentals of Bitcoin, which claims to be a fully decentralized system. This raises concerns about the legitimacy of the decision-making process and therefore about the security of the system, as it tends to bring back Bitcoin a trusted third party scheme. 
 
 Footnotes: <br>
-<b id="footnote1">1</b>. Which led to the launch of Bitcoin XT, a Bitcoin client where miners can vote to change the block size limit. [↩](#a1) <br>
+<b id="footnote1">1</b>. Which led to the launch of Bitcoin XT, a Bitcoin client where miners can vote to change the block size limit.[↩](#a1) <br>
 
 ### Changes to the protocol
 
