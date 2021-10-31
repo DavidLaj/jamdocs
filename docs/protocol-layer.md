@@ -46,12 +46,12 @@ Open source code also allows anyone to modify the it and run their own version o
 
 When changes are applied to the reference client and users run different versions of Bitcoin Core at the same time on the network, it creates forks in the chain that can be of two types depending on the nature of the changes: *soft fork* or *hard fork*.
 
-* *Soft fork*
+* ***Soft fork***<br>
 A soft fork is a change to an implementation that is backward compatible (e.g. a reduction in the block size limit). Outdated nodes can continue to transact with the updated nodes, but blocks that violate the new rules are made obsolete by the updated nodes. If a majority of the computational power of the network follows the new rules, there will be no permanent divergence in the chain because outdated nodes will accept the chain of updated nodes as the main chain. A soft fork is illustrated in the next Figure.
-<br>
+
 ![](https://raw.githubusercontent.com/DavidLaj/jamdocs/master/docs/images/SoftFork.png "Figure 1")
 
-* *Hard fork*
+* ***Hard fork***<br>
 A hard fork is a change to an implementation that makes the client incompatible with previous versions (e.g. an increase in the block size limit or a new transaction feature). Nodes must update their client to the new protocol so that they do not reject the blocks constructed from the new rules. Outdated nodes continue to publish blocks using the old format and only accept blocks in this format. This results in a permanent divergence of the blockchain where two versions exist simultaneously, one from the updated nodes and one from the outdated nodes, as shown in the Figure below. 
-<br>
+
 ![](https://raw.githubusercontent.com/DavidLaj/jamdocs/master/docs/images/HardFork.png "Figure 2")
